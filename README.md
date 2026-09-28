@@ -14,7 +14,7 @@ Plugin do Claude (Claude Code i Claude Desktop / Cowork) dla kursantów kursu �
 3. Połącz plugin z bazą wiedzy kursu (tak samo w każdej aplikacji Claude):
    - **Claude Desktop / Cowork / claude.ai**: w ustawieniach pluginu, zakładka Connectors, przy serwerze `baza` kliknij **Connect**.
    - **Claude Code**: wpisz `/mcp`, wybierz `baza` i uruchom logowanie.
-   Otworzy się strona logowania kursu. Wpisz **adres e-mail, którym zapisano Cię na kurs**, i kliknij „Wyślij link”. W mailu kliknij „Połącz z Claude” (link działa 15 minut, w Claude Code otwórz go na tym samym komputerze). Wrócisz do Claude już połączony / połączona. Nic nie jest zapisywane w przeglądarce; dostęp można w każdej chwili cofnąć.
+   Otworzy się strona logowania kursu. Wpisz **adres e-mail, którym zapisano Cię na kurs**, i kliknij „Wyślij link”. Dostaniesz mail z **6-cyfrowym kodem**; wpisz go na tej samej stronie (kod działa 15 minut) i kliknij „Połącz”. Wrócisz do Claude już połączony / połączona. Nic nie jest zapisywane w przeglądarce; dostęp można w każdej chwili cofnąć.
 
 ## Pierwsze uruchomienie
 
@@ -41,6 +41,7 @@ Agent sam sprawdzi, co masz, i podpowie, co warto dodać. Nigdy nie prosi o has�
 ## Gdy coś nie działa
 
 - „Baza wiedzy niedostępna” lub błąd 401 → kliknij „Connect” przy serwerze `baza` (w Claude Code: `/mcp`) i zaloguj się ponownie (e-mail → link z maila).
-- Mail z linkiem nie przyszedł → sprawdź spam; upewnij się, że to adres z zapisu na kurs; po 15 minutach poproś o nowy link.
+- Mail z kodem nie przyszedł → sprawdź spam; upewnij się, że to adres z zapisu na kurs; po 15 minutach poproś o nowy kod.
+- „Kod wygasł albo wyczerpano próby” → podaj e-mail jeszcze raz, przyjdzie nowy kod.
 - Plugin nie widzi folderu firmy → upewnij się, że otworzyłeś / otworzyłaś folder firmy, a nie katalog domowy.
 - Inne problemy → napisz na kontakt@sztukamarketingu.pl.
