@@ -2,10 +2,7 @@
   "mcpServers": {
     "baza": {
       "type": "http",
-      "url": "https://baza.sztukamarketingu.pl/mcp",
-      "headers": {
-        "Authorization": "Bearer ${user_config.klucz_kursanta}"
-      }
+      "url": "https://baza.sztukamarketingu.pl/mcp"
     }
   }
 }

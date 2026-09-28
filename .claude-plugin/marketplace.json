@@ -1,6 +1,9 @@
 {
   "name": "sztuka-marketingu",
-  "owner": { "name": "Tomasz Szwecki", "url": "https://sztukamarketingu.pl" },
+  "owner": {
+    "name": "Tomasz Szwecki",
+    "url": "https://sztukamarketingu.pl"
+  },
   "description": "Pluginy do kursu „AI w biznesie i marketingu”",
   "plugins": [
     {
@@ -8,7 +11,7 @@
       "displayName": "AI w biznesie i marketingu",
       "source": "./plugin",
       "description": "Zespół agentów AI: fundament firmy i strategia marketingowa na bazie wiedzy kursu.",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ]
 }

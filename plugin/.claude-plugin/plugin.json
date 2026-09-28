@@ -1,18 +1,17 @@
 {
   "name": "sztuka-marketingu",
   "displayName": "AI w biznesie i marketingu",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Zespół agentów AI z kursu „AI w biznesie i marketingu”: buduje fundament Twojej firmy i strategię marketingową, korzystając z bazy wiedzy kursu.",
-  "author": { "name": "Tomasz Szwecki", "url": "https://sztukamarketingu.pl" },
+  "author": {
+    "name": "Tomasz Szwecki",
+    "url": "https://sztukamarketingu.pl"
+  },
   "homepage": "https://sztukamarketingu.pl",
-  "keywords": ["marketing", "strategia", "kurs", "polski"],
-  "userConfig": {
-    "klucz_kursanta": {
-      "type": "string",
-      "title": "Klucz kursanta",
-      "description": "Klucz dostępu do bazy wiedzy kursu (zaczyna się od skm_). Znajdziesz go w materiałach kursu.",
-      "sensitive": true,
-      "required": true
-    }
-  }
+  "keywords": [
+    "marketing",
+    "strategia",
+    "kurs",
+    "polski"
+  ]
 }
