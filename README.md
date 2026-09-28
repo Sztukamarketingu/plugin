@@ -11,10 +11,10 @@ Plugin do Claude (Claude Code i Claude Desktop / Cowork) dla kursantów kursu �
    /plugin install sztuka-marketingu@sztuka-marketingu
    ```
    W Claude Desktop / claude.ai: Dostosuj → Pluginy → Dodaj marketplace → `Sztukamarketingu/plugin`, potem zainstaluj „AI w biznesie i marketingu”.
-3. Podaj **klucz kursanta** (zaczyna się od `skm_`; znajdziesz go w materiałach kursu):
-   - **Claude Desktop / Cowork / claude.ai**: w ustawieniach pluginu przy serwerze `baza` kliknij **Connect**. Otworzy się strona logowania kursu, wklej klucz i kliknij „Połącz”. Wrócisz do Claude już połączony / połączona.
-   - **Claude Code**: Claude pyta o klucz przy włączaniu pluginu. Jeśli przegapisz pytanie: `/plugin configure sztuka-marketingu`.
-   Klucz nie jest nigdzie zapisywany w przeglądarce; dostęp można w każdej chwili cofnąć.
+3. Połącz plugin z bazą wiedzy kursu:
+   - **Claude Desktop / Cowork / claude.ai**: w ustawieniach pluginu przy serwerze `baza` kliknij **Connect**. Otworzy się strona logowania kursu. Wpisz **adres e-mail, którym zapisano Cię na kurs**, i kliknij „Wyślij link”. W mailu kliknij „Połącz z Claude” (link działa 15 minut). Wrócisz do Claude już połączony / połączona.
+   - **Claude Code**: po instalacji też otworzy się ta strona logowania. Alternatywnie Claude Code może zapytać o klucz kursanta przy włączaniu pluginu (`/plugin configure sztuka-marketingu`), jeśli go masz z materiałów kursu.
+   Nic nie jest zapisywane w przeglądarce; dostęp można w każdej chwili cofnąć.
 
 ## Pierwsze uruchomienie
 
@@ -40,6 +40,7 @@ Agent sam sprawdzi, co masz, i podpowie, co warto dodać. Nigdy nie prosi o has�
 
 ## Gdy coś nie działa
 
-- „Baza wiedzy niedostępna” lub błąd 401 → w Claude Desktop / Coworku kliknij „Connect” przy serwerze `baza` i zaloguj się ponownie; w Claude Code sprawdź klucz: `/plugin configure sztuka-marketingu`.
+- „Baza wiedzy niedostępna” lub błąd 401 → kliknij „Connect” przy serwerze `baza` i zaloguj się ponownie (e-mail → link z maila).
+- Mail z linkiem nie przyszedł → sprawdź spam; upewnij się, że to adres z zapisu na kurs; po 15 minutach poproś o nowy link.
 - Plugin nie widzi folderu firmy → upewnij się, że otworzyłeś / otworzyłaś folder firmy, a nie katalog domowy.
 - Inne problemy → napisz na kontakt@sztukamarketingu.pl.
