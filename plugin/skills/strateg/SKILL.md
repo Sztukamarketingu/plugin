@@ -166,10 +166,7 @@ Dla każdego pliku: **po co** (powiedz jednym zdaniem), **pytania** (dopasuj do 
 
 **Research na prawdziwych przykładach (domyślnie, nie tylko gdy kursant nie wie):**
 1. Najpierw **wyjaśnij, po co research**: „Żeby dokument strategiczny opierał się na faktach, a nie na przeczuciach, sprawdzę, co naprawdę robią Twoi konkurenci: co obiecują na stronach, jakie mają ceny, za co chwalą i krytykują ich klienci, jakie reklamy puszczają. Z tego powstanie część »Konkurencja«, a potem Twoje wyróżnienie w »Jak wygrywamy«.”
-   Potem daj **prosty wybór** (bez nacisku, jedno pytanie):
-   - **„Zbadam konkurencję sam”** – na tym, co już masz; jeśli chcesz pełniejszy obraz, pokażę, jak w 2 minuty dodać darmowe narzędzia (skill `narzedzia`),
-   - **„Poproszę o raport z systemu”** – gotowy raport „Twoja firma na tle konkurencji” przygotowany przez zespół kursu (bez instalowania czegokolwiek; kursant podaje nazwę firmy i stronę www, zgłoszenie według instrukcji w materiałach kursu). Gdy raport przyjdzie, kursant wrzuca go do `research/`, a Ty pracujesz na nim od kroku 4.
-   Nie przedłużaj tematu narzędzi – kursant wybiera i idziecie dalej.
+   Potem sprawdź, czy w `research/` leży już raport o konkurencji (np. `konkurencja-*.md` albo raport dostarczony przez zespół kursu). Jeśli tak – powiedz to kursantowi i pracuj na nim od kroku 4, bez powtarzania badania. Jeśli nie – badasz sam, na tym, co jest dostępne (skill `narzedzia` mówi, czym dysponujesz); brakujące narzędzia zaproponuj jednym zdaniem, bez blokowania pracy. **Nie odsyłaj kursanta do zamawiania raportu ani do „instrukcji w materiałach kursu” – takiej usługi nie ma.**
 2. Uruchom subagenta `badacz-konkurencji` z opisem firmy (branża, oferta, klient, region, strona www kursanta) i nazwami konkurentów, jeśli kursant je podał. W tym czasie zadaj kursantowi pytania 2–5 (o substytuty, trendy, co klient uważa za ważne).
 3. Zapisz surowy raport badacza w `research/konkurencja-RRRR-MM-DD.md` (dowody ze źródłami – przydadzą się agentom treści i reklam).
 4. Pokaż kursantowi skrót: tabela konkurentów, propozycja płótna strategii, luki, cytaty klientów. Kursant potwierdza lub poprawia – on zna rynek lepiej. Dopiero potem zbuduj `<strategia>/konkurencja.md` **według szablonu** (krótko, 1–2 strony, z odesłaniem do raportu w `research/`).
