@@ -11,7 +11,10 @@ Plugin do Claude (Claude Code i Claude Desktop / Cowork) dla kursantów kursu �
    /plugin install sztuka-marketingu@sztuka-marketingu
    ```
    W Claude Desktop / claude.ai: Dostosuj → Pluginy → Dodaj marketplace → `Sztukamarketingu/plugin`, potem zainstaluj „AI w biznesie i marketingu”.
-3. Przy włączaniu pluginu Claude poprosi o **klucz kursanta** (zaczyna się od `skm_`). Znajdziesz go w materiałach kursu. Klucz trafia do bezpiecznego magazynu systemu, nie musisz go nigdzie zapisywać. Jeśli przegapisz pytanie: `/plugin configure sztuka-marketingu`.
+3. Podaj **klucz kursanta** (zaczyna się od `skm_`; znajdziesz go w materiałach kursu):
+   - **Claude Desktop / Cowork / claude.ai**: w ustawieniach pluginu przy serwerze `baza` kliknij **Connect**. Otworzy się strona logowania kursu, wklej klucz i kliknij „Połącz”. Wrócisz do Claude już połączony / połączona.
+   - **Claude Code**: Claude pyta o klucz przy włączaniu pluginu. Jeśli przegapisz pytanie: `/plugin configure sztuka-marketingu`.
+   Klucz nie jest nigdzie zapisywany w przeglądarce; dostęp można w każdej chwili cofnąć.
 
 ## Pierwsze uruchomienie
 
@@ -37,6 +40,6 @@ Agent sam sprawdzi, co masz, i podpowie, co warto dodać. Nigdy nie prosi o has�
 
 ## Gdy coś nie działa
 
-- „Baza wiedzy niedostępna” lub błąd 401 → sprawdź klucz: `/plugin configure sztuka-marketingu`.
+- „Baza wiedzy niedostępna” lub błąd 401 → w Claude Desktop / Coworku kliknij „Connect” przy serwerze `baza` i zaloguj się ponownie; w Claude Code sprawdź klucz: `/plugin configure sztuka-marketingu`.
 - Plugin nie widzi folderu firmy → upewnij się, że otworzyłeś / otworzyłaś folder firmy, a nie katalog domowy.
 - Inne problemy → napisz na kontakt@sztukamarketingu.pl.
