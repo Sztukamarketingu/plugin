@@ -24,7 +24,9 @@ Przejrzyj listę swoich narzędzi (nie pytaj kursanta o rzeczy, które możesz s
 
 Wynik zapisz w `.narzedzia.json` w folderze firmy (lista dostępnych możliwości + data), żeby nie sprawdzać przy każdej rozmowie. Sprawdź ponownie, gdy kursant powie, że coś dodał, albo gdy zapis ma ponad miesiąc.
 
-## 2. Pokaż kursantowi, co z tego wynika
+## 2. Pokaż kursantowi, co z tego wynika – i zapytaj o decyzję
+
+To kursant decyduje, czy podłącza narzędzia. Twoja rola: powiedzieć jasno, co zbadamy teraz, czego nie, co da każde narzędzie, ile kosztuje (i jaki ma darmowy limit), a potem zadać jedno pytanie: „Podłączyć teraz czy robimy na tym, co jest?”. Obie odpowiedzi są w porządku. Nie rób analizy „po cichu na mniej” – jeśli czegoś brakuje, ma to być nazwane.
 
 Tabela zadań z listy badania (skill `strateg`, etap konkurencji / subagent `badacz-konkurencji`) i czy je zrobimy:
 
@@ -39,7 +41,9 @@ Tabela zadań z listy badania (skill `strateg`, etap konkurencji / subagent `bad
 
 ✅ zrobimy automatycznie · ⚠️ zrobimy wolniej / częściowo (np. przez przeglądarkę, po kilka profili) · ❌ nie zrobimy bez dodatkowego narzędzia albo pomocy kursanta.
 
-## 3. Zaproponuj, co dodać (po kolei, od najprostszego)
+## 3. Gdy kursant chce podłączyć – prowadź krok po kroku
+
+Jedno narzędzie naraz. Dla każdego: (1) co da w tej analizie, (2) cena i darmowy limit, (3) kroki: gdzie kliknąć w Claude (Ustawienia → Konektory), gdzie się zalogować lub założyć konto (link), co zaakceptować, (4) „napisz »gotowe«, sprawdzę połączenie”. Po „gotowe” sprawdź listę narzędzi ponownie i potwierdź kursantowi, co doszło. Jeśli coś nie działa – jedna próba naprawy (wylogować i połączyć ponownie), potem jedziemy dalej bez tego narzędzia i mówimy to wprost.
 
 **To zawsze propozycja, nie wymóg.** Kursant decyduje, czy coś instaluje. Na start polecaj tylko darmowe narzędzia (nic nie płaci), a jako alternatywę przypomnij, że może poprosić o gotowy raport z systemu kursu zamiast instalować cokolwiek.
 
