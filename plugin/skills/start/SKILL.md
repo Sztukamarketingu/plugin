@@ -57,7 +57,7 @@ Kolejność uzupełniania: pierwszy element ⬜ lub 🟡 według numeracji tabel
 | Sytuacja | Co robisz |
 |---|---|
 | **A. Folder pusty** (brak plików o firmie) | Powiedz wprost: „Twój folder o firmie jest pusty, dlatego zaczniemy od początku”. Powitanie (niżej) z celem i krokami, pytanie o nazwę firmy, czym się zajmuje i stronę www. Gdy poda stronę – zaproponuj, że najpierw ją obejrzysz (skill `import-materialow`). Potem skill `strateg`. |
-| **B. Są dokumenty, ale nie z etapu 1** (oferty PDF, cenniki, notatki) | Wymień je krótko i zaproponuj: „Najpierw je przeczytam i przygotuję szkice elementów, potem dopytam tylko o luki” → skill `import-materialow`. |
+| **B. Są dokumenty, ale nie z etapu 1** (oferty PDF, cenniki, stara strategia, analizy, raporty, notatki) | Wymień je krótko i zaproponuj: „Najpierw je przejrzę i spiszę, co masz i do czego się przyda, a potem będę pytać tylko o to, czego w nich nie ma” → skill `import-materialow` (folder `materialy/` i `INDEKS.md`), potem skill `strateg`. Kursant nie musi niczego porządkować sam. |
 | **C. Są pliki z etapu 1 albo część elementów** | Komunikat z inwentaryzacji (wzór wyżej) → skill `strateg` od pierwszego elementu ⬜/🟡. |
 | **D. Elementy 1–10 gotowe** | Zaproponuj złożenie dokumentu strategicznego (skill `strateg`, krok 11). Jeśli dokument już jest: przegląd aktualności (pliki starsze niż 3 miesiące) albo kolejny moduł kursu. |
 
