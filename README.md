@@ -1,6 +1,6 @@
 # Plugin „AI w biznesie i marketingu”
 
-Plugin do Claude (Claude Code i Claude Desktop / Cowork) dla kursantów kursu „AI w biznesie i marketingu” (Sztuka Marketingu). Etap 1: budujesz z agentem **fundament firmy** (klient, konkurencja, oferta, strategia) i **plan marketingowy**, korzystając z bazy wiedzy kursu. Kolejne role (treści, reklamy, finanse) dojdą w następnych modułach.
+Plugin do Claude (Claude Code i Claude Desktop / Cowork) dla kursantów kursu „AI w biznesie i marketingu” (Sztuka Marketingu). Etap 1: budujesz z agentem **fundament firmy** (klient, konkurencja, oferta, strategia) i **plan marketingowy**, korzystając z bazy wiedzy kursu. Etap 2: **drugi mózg firmy** – Obsidian i codzienny rytm realizacji strategii. Kolejne role (treści, reklamy, finanse) dojdą w następnych modułach.
 
 ## Instalacja (raz)
 
@@ -29,6 +29,24 @@ Plugin do Claude (Claude Code i Claude Desktop / Cowork) dla kursantów kursu �
 - `plan-marketingowy.md` – finał etapu 1
 - `CLAUDE.md` – mapa dla agentów kolejnych modułów
 - `.postep.json` – zapis, gdzie skończyliście (możesz przerwać w każdej chwili)
+
+## Moduł: drugi mózg firmy (od wersji 0.2.0)
+
+Gdy masz już wybory strategiczne i cele, agent drugiego mózgu zamienia ten sam folder w **pamięć firmy z codziennym rytmem**: pomaga zainstalować **Obsidian** (darmowy), otwiera folder jako sejf, układa miejsce na plan dnia, spotkania, pomysły, decyzje i raporty, a potem codziennie porównuje dzień z celami.
+
+Komendy:
+- `/drugi-mozg` – założenie (raz, ok. 1 godziny): Obsidian, foldery, pulpit firmy, sekcja „Drugi mózg” w `CLAUDE.md`
+- `/rano` – brief: co dziś najbardziej przybliży Cię do celu
+- `/wieczor` – sprawozdanie i wytyczne na jutro
+- `/zapisz` – „gdzie to zapisać?”: wrzutka trafia na swoje miejsce
+- `/spotkanie` – nagranie lub notatka ze spotkania → ustalenia, decyzje, zadania (najpierw kontrola RODO)
+- `/pomysl` i `/awansuj` – bank pomysłów i przeniesienie przemyśleń do decyzji firmy
+- `/tydzien` – agenda spotkania tygodniowego i rozliczenie celu
+- `/porzadki` – comiesięczny przegląd bazy
+- `/zadania` – podłączenie **ClickUp albo Bitrix24**: tam zostają zadania i stamtąd agent bierze postęp prac
+- `/encyklopedia` – opcjonalnie: wizualne podsumowanie dla wspólników w **Notion**
+
+Co powstanie: `index.md`, `log.md`, `Pulpit firmy.md`, foldery `warsztat/`, `pomysly/`, `spotkania/`, `dziennik-decyzji/`, `raporty/`, `wiki/`, `prywatne/`, `archiwum/`. Twoje dotychczasowe pliki zostają na swoich miejscach.
 
 ## Narzędzia do researchu (opcjonalnie)
 

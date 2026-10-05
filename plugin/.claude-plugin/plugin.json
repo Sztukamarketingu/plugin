@@ -1,8 +1,8 @@
 {
   "name": "sztuka-marketingu",
   "displayName": "AI w biznesie i marketingu",
-  "version": "0.1.4",
-  "description": "Zespół agentów AI z kursu „AI w biznesie i marketingu”: buduje fundament Twojej firmy i strategię marketingową, korzystając z bazy wiedzy kursu.",
+  "version": "0.2.0",
+  "description": "Zespół agentów AI z kursu „AI w biznesie i marketingu”: buduje fundament Twojej firmy i strategię marketingową, a potem prowadzi drugi mózg firmy w Obsidianie (rytm dnia i tygodnia), korzystając z bazy wiedzy kursu.",
   "author": {
     "name": "Tomasz Szwecki",
     "url": "https://sztukamarketingu.pl"

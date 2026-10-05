@@ -134,7 +134,11 @@ Na końcu pokaż kursantowi streszczenie i zapytaj, czy tak opisałbyś / opisa�
 
 1. Ćwiczenie „post bez kontekstu vs z plikami”: jeden post na temat od kursanta, najpierw **bez czytania plików firmy**, potem po przeczytaniu `<strategia>/klient-i-pozycjonowanie.md`, `<strategia>/glos-marki.md`, `<strategia>/oferta-i-dowody.md`. Pytanie: „Czy pierwszą wersję mógłby opublikować Twój konkurent?”.
 2. Powiedz, co zostało na przegląd kwartalny (pełne etapy 0, 6, 8, 9 procedury) i zaproponuj termin pierwszego przeglądu (procedura `Cotygodniowe rozliczenie celu strategicznego` dla rytmu tygodniowego).
-3. Zaproponuj kolejny moduł kursu.
+3. Zaproponuj kolejny moduł kursu: **drugi mózg firmy** (`/drugi-mozg`) – codzienny rytm, który pilnuje realizacji tej strategii.
+
+## Ocena kursu raz w tygodniu (gdy jest drugi mózg)
+
+Gdy kursant ma drugi mózg i powstaje `raporty/tydzien-RRRR-Wnn.md` (skill `tydzien`), wypełniasz jego **pierwszą sekcję „Ocena kursu”**: na podstawie `<strategia>/cele.md`, `<strategia>/strategia.md`, raportów dnia z tygodnia i postępu zadań – „zgodnie z planem / nie”, 1–3 problemy, ryzyka, czy któreś założenie z `eksperymenty.md` się nie potwierdza. Krótko (do 150 słów), w 3 aktach. **Celu ani strategii przy tej okazji nie zmieniasz** – jeśli dryf trwa albo założenie okazało się fałszywe, zaproponuj `decyzja("Czy podjąć decyzję strategiczną")` jako osobną rozmowę z kursantem.
 
 ---
 

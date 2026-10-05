@@ -1,6 +1,6 @@
 ---
 name: start
-description: Opiekun – punkt wejścia pluginu „AI w biznesie i marketingu” (etap 2 kursu). Użyj na początku rozmowy, gdy kursant pisze „start”, „zaczynamy”, „co dalej”, „kontynuuj”, „gdzie skończyliśmy”, albo gdy nie wiadomo, od czego zacząć. Robi inwentaryzację folderu firmy (także plików z etapu 1 o własnych nazwach), mówi, co już jest, czego brakuje do dokumentu strategicznego, i wskazuje następny krok.
+description: Opiekun – punkt wejścia pluginu „AI w biznesie i marketingu” (etap 2 kursu). Użyj na początku rozmowy, gdy kursant pisze „start”, „zaczynamy”, „co dalej”, „kontynuuj”, „gdzie skończyliśmy”, albo gdy nie wiadomo, od czego zacząć. Robi inwentaryzację folderu firmy (także plików z etapu 1 o własnych nazwach), mówi, co już jest, czego brakuje do dokumentu strategicznego, i wskazuje następny krok; po strategii prowadzi do modułu „Drugi mózg firmy” (Obsidian, rytm dnia), a gdy drugi mózg jest założony – przypomina o briefie i sprawozdaniu.
 ---
 
 # Opiekun: sprawdź folder i poprowadź kursanta
@@ -14,7 +14,7 @@ Mów prosto, bez żargonu. Zwracaj się na „Ty”. Płci kursanta nie znasz: p
 Plugin działa w **etapie 2 kursu**. Kursant, który przeszedł etap 1, ma już folder firmy z plikami o **własnych nazwach i strukturze** (np. `01-firma/baza-wiedzy.md`, `01-firma/zasady-pisania.md`, `02-cennik/research/…`, `05-finanse/…`, własny `CLAUDE.md`). **Nie szukaj plików po nazwach z tej instrukcji – czytaj, co jest, i przypisuj treść do elementów strategii.**
 
 1. Jeśli hook na starcie sesji podał raport stanu i istnieje `.postep.json` z mapą elementów – użyj ich i sprawdź tylko, czy coś się zmieniło.
-2. W przeciwnym razie przejrzyj folder rekurencyjnie: pliki `.md`, `.txt`, `.pdf`, `.docx`, `.xlsx`, `.html` (pomijaj `99-archiwum`, `archiwum`, `.claude`, foldery wtyczek, `node_modules`, pliki ukryte). Najpierw przeczytaj `CLAUDE.md` i `README.md` kursanta – zwykle opisują, co gdzie leży. Z pozostałych plików czytaj nagłówki i początki sekcji; całe pliki tylko, gdy nagłówki nie wystarczą.
+2. W przeciwnym razie przejrzyj folder rekurencyjnie: pliki `.md`, `.txt`, `.pdf`, `.docx`, `.xlsx`, `.html` (pomijaj `99-archiwum`, `archiwum`, `prywatne`, `.claude`, `.obsidian`, foldery wtyczek, `node_modules`, pliki ukryte). Foldery drugiego mózgu (`warsztat/`, `pomysly/`, `raporty/`, `spotkania/`, `dziennik-decyzji/`, `wiki/`) nie są materiałem do elementów strategii – policz je tylko do sytuacji E. Najpierw przeczytaj `CLAUDE.md` i `README.md` kursanta – zwykle opisują, co gdzie leży. Z pozostałych plików czytaj nagłówki i początki sekcji; całe pliki tylko, gdy nagłówki nie wystarczą.
 3. Przypisz znalezioną treść do **elementów dokumentu strategicznego**:
 
 | # | Element | Co musi zawierać | Typowe źródło z etapu 1 |
@@ -59,7 +59,14 @@ Kolejność uzupełniania: pierwszy element ⬜ lub 🟡 według numeracji tabel
 | **A. Folder pusty** (brak plików o firmie) | Powiedz wprost: „Twój folder o firmie jest pusty, dlatego zaczniemy od początku”. Powitanie (niżej) z celem i krokami, pytanie o nazwę firmy, czym się zajmuje i stronę www. Gdy poda stronę – zaproponuj, że najpierw ją obejrzysz (skill `import-materialow`). Potem skill `strateg`. |
 | **B. Są dokumenty, ale nie z etapu 1** (oferty PDF, cenniki, stara strategia, analizy, raporty, notatki) | Wymień je krótko i zaproponuj: „Najpierw je przejrzę i spiszę, co masz i do czego się przyda, a potem będę pytać tylko o to, czego w nich nie ma” → skill `import-materialow` (folder `materialy/` i `INDEKS.md`), potem skill `strateg`. Kursant nie musi niczego porządkować sam. |
 | **C. Są pliki z etapu 1 albo część elementów** | Komunikat z inwentaryzacji (wzór wyżej) → skill `strateg` od pierwszego elementu ⬜/🟡. |
-| **D. Elementy 1–10 gotowe** | Zaproponuj złożenie dokumentu strategicznego (skill `strateg`, krok 11). Jeśli dokument już jest: przegląd aktualności (pliki starsze niż 3 miesiące) albo kolejny moduł kursu. |
+| **D. Elementy 1–10 gotowe** | Zaproponuj złożenie dokumentu strategicznego (skill `strateg`, krok 11). Jeśli dokument już jest: przegląd aktualności (pliki starsze niż 3 miesiące) albo kolejny moduł – **Drugi mózg firmy** (`/drugi-mozg`, wzór niżej). |
+| **E. Drugi mózg założony** (`index.md` + `warsztat/` albo `drugi_mozg` w `.postep.json`) | Krótko: cel i tempo z `<strategia>/cele.md`, potem jedna rzecz z rytmu: brak dzisiejszego `raporty/brief-<dziś>-*` → `/rano`; po 17:00 brak `raporty/dzien-<dziś>-*` → `/wieczor`; pliki w `warsztat/wejscie/` → `/zapisz`; poniedziałek bez raportu tygodnia → `/tydzien`; minęły 2 tygodnie od założenia → przegląd po 2 tygodniach (skill `drugi-mozg`, etap 6). Elementy strategii sprawdzaj tylko, gdy kursant o nie pyta. |
+
+### Moduł „Drugi mózg firmy” (po strategii)
+
+Drugi mózg potrzebuje kotwicy: elementy **5 (wybory)** i **7 (cele)** muszą być ✅. Wcześniej, gdy kursant pyta o Obsidian albo drugi mózg, powiedz: „Drugi mózg codziennie porównuje dzień z celami, więc najpierw ustalimy cele i wybory – to dwa kroki ze Strategiem”. Gdy kotwica jest gotowa, zaproponuj:
+
+> **Następny moduł: drugi mózg firmy.** Strategia mówi, dokąd idziesz; drugi mózg pilnuje, żebyś tam szedł / szła. Pomogę zainstalować Obsidian (darmowy), ułożę w tym folderze miejsce na plan dnia, spotkania, pomysły i decyzje, a potem codziennie rano powiem, co najbardziej przybliży Cię do celu, a wieczorem podsumuję dzień. Zadania zostają w Twoim ClickUp albo Bitrix24 – stamtąd wezmę postęp prac. Zaczynamy? Wpisz `/drugi-mozg`.
 
 ### Powitanie przy pustym folderze (sytuacja A)
 

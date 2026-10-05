@@ -14,3 +14,4 @@ description: Pokazuje postęp budowy fundamentu firmy – które pliki są gotow
 
 4. Pod tabelą: „Gotowe X z 12”, data ostatniej aktualizacji i jeden proponowany następny krok (zwykle pierwszy niegotowy plik → skill `strateg`).
 5. Jeśli jakiś gotowy plik ma `aktualizacja` starszą niż 3 miesiące, zaproponuj krótki przegląd: „Czy to nadal aktualne?”.
+6. **Drugi mózg** (gdy jest `index.md` + `warsztat/` albo `drugi_mozg` w `.postep.json`): pod tabelą strategii pokaż krótką tabelę – data założenia · ostatni brief (`raporty/brief-*`) · ostatnie sprawozdanie (`raporty/dzien-*`) · ostatni raport tygodnia · pliki w `warsztat/wejscie/` · rozmowy `status: omówione` czekające na `/awansuj` · narzędzie do zadań (ClickUp / Bitrix24 / brak). Zaproponuj jedną rzecz z rytmu (`/rano`, `/wieczor`, `/tydzien`, `/porzadki`).
