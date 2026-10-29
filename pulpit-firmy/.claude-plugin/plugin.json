@@ -1,0 +1,8 @@
+{
+  "name": "pulpit-firmy",
+  "displayName": "Pulpit firmy",
+  "version": "0.1.0",
+  "description": "Pulpit obok rozmowy z Claude'em: najpierw postęp strategii (12 elementów), po jej ukończeniu wybrane dane firmy. Tylko Claude Code (terminal i zakładka Code w aplikacji).",
+  "author": { "name": "Tomasz Szwecki", "url": "https://sztukamarketingu.pl" },
+  "types": "./types/index.d.ts"
+}

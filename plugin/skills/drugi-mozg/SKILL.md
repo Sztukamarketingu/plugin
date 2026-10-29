@@ -80,6 +80,7 @@ Zadawaj po jednym–dwa pytania naraz, odpowiedzi zapisuj od razu. **Nie pytaj o
 | rano | `/rano` – brief: co dziś najbardziej przybliży do celu |
 | coś do zapisania („wrzutka”) | `/zapisz` |
 | po spotkaniu / rozmowie z klientem | `/spotkanie` |
+| przed wydarzeniem i po nim (dodatek Networking) | `/networking` – trening, potem refleksja |
 | pomysł albo inspiracja | `/pomysl` |
 | przemyślane w warsztacie, ma trafić do firmy | `/awansuj` |
 | wieczorem | `/wieczor` – sprawozdanie i wytyczne na jutro |

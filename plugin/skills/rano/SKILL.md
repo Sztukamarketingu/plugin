@@ -16,7 +16,9 @@ Jesteś **Agentem drugiego mózgu** w zespole AI kursanta (pamięć firmy i rytm
 1. `decyzja("Poranny brief")` → kolejność czytania, struktura briefu, zasady.
 2. Ustal osobę (`<osoba>` z `index.md`; w firmie jednoosobowej jedna). Jeśli w `warsztat/dzien/<osoba>/<dziś>.md` nie ma notatki – utwórz ją z szablonu `notatka-dnia` i poproś o 2–3 zdania „co dziś planuję”, zanim zrobisz brief (albo zrób brief bez nich i zaznacz to).
 3. **Postęp prac z narzędzia do zadań:** jeśli w `CLAUDE.md` jest ClickUp albo Bitrix24 – pobierz dane tak, jak opisuje skill `zadania` (łącznik, webhook tylko do odczytu albo wklejona lista). Zadania zostają w narzędziu; do raportu idzie tylko podsumowanie. Brak danych napisz wprost jednym zdaniem („nie widzę zadań z Bitrix24 – wklej listę albo podłącz `/zadania`”).
-4. Zapisz `raporty/brief-RRRR-MM-DD-<osoba>.md` (≤250 słów) i dopisz linię do `log.md`. Pokaż brief w rozmowie.
-5. Brak celu z liczbą i terminem → **brief się nie robi**: powiedz, czego brakuje, i zaproponuj skill `strateg`.
+   **Dziś wydarzenie** (konferencja, targi, spotkanie branżowe) i jest `wiki/networking.md` → dopisz do briefu 2–3 punkty z „Na co zwracam uwagę” i zaproponuj 10-minutowy trening (skill `networking`).
+4. Jest `.pulpit.json` → zaktualizuj w nim liczby i listę na dziś (skill `pulpit`, krok 5).
+5. Zapisz `raporty/brief-RRRR-MM-DD-<osoba>.md` (≤250 słów) i dopisz linię do `log.md`. Pokaż brief w rozmowie.
+6. Brak celu z liczbą i terminem → **brief się nie robi**: powiedz, czego brakuje, i zaproponuj skill `strateg`.
 
 Brief zaczyna się od celu i tempa, nie od kalendarza. Celów ani strategii nie zmieniasz.

@@ -14,7 +14,7 @@ Plugin do Claude (Claude Code i Claude Desktop / Cowork) dla kursantów kursu �
 3. Połącz plugin z bazą wiedzy kursu (tak samo w każdej aplikacji Claude):
    - **Claude Desktop / Cowork / claude.ai**: w ustawieniach pluginu, zakładka Connectors, przy serwerze `baza` kliknij **Connect**.
    - **Claude Code**: wpisz `/mcp`, wybierz `baza` i uruchom logowanie.
-   Otworzy się strona logowania kursu. Wpisz **adres e-mail, którym zapisano Cię na kurs**, i kliknij „Wyślij link”. Dostaniesz mail z **6-cyfrowym kodem**; wpisz go na tej samej stronie (kod działa 15 minut) i kliknij „Połącz”. Wrócisz do Claude już połączony / połączona. Nic nie jest zapisywane w przeglądarce; dostęp można w każdej chwili cofnąć.
+   Otworzy się **panel programu** (`panel.sztukamarketingu.pl`). Jeśli jesteś w nim zalogowany / zalogowana, wystarczy kliknąć **„Zezwól”**. Jeśli nie – wpisz **adres e-mail z zapisu**, dostaniesz mail z **6-cyfrowym kodem** (działa 15 minut), wpisz go i kliknij „Zezwól”. Wrócisz do Claude już połączony / połączona. Dostęp można w każdej chwili cofnąć.
 
 ## Pierwsze uruchomienie
 
@@ -29,6 +29,13 @@ Plugin do Claude (Claude Code i Claude Desktop / Cowork) dla kursantów kursu �
 - `plan-marketingowy.md` – finał etapu 1
 - `CLAUDE.md` – mapa dla agentów kolejnych modułów
 - `.postep.json` – zapis, gdzie skończyliście (możesz przerwać w każdej chwili)
+
+## Panel programu (od wersji 0.3.0)
+
+Plugin współpracuje z **panelem programu** (`https://panel.sztukamarketingu.pl/panel`): quiz startowy, plan nauki na 4 tygodnie, postęp, pakiety wiedzy i spotkania grupy.
+- Na początku rozmowy agent pyta serwer, **co dalej** (wynik quizu, następny krok).
+- Po każdym kroku strategii wysyła do panelu **same statusy** elementów (gotowe / w trakcie / brak) – treść plików firmy zostaje u Ciebie.
+- **Pakiety wiedzy:** strategia jest otwarta od razu; kolejne pakiety otwierają się po jej ukończeniu. **Dodatki** (od 0.3.1: Networking, Pulpit firmy) to osobne umiejętności – wiedza i skill – włączane w panelu niezależnie od strategii. `/pakiet` pokazuje, co masz.
 
 ## Moduł: drugi mózg firmy (od wersji 0.2.0)
 
