@@ -51,7 +51,17 @@ Status elementu: ✅ **jest** (`gotowy` – treść pokrywa wymagania) · 🟡 *
 
 **Nie przenoś, nie zmieniaj nazw i nie nadpisuj plików z etapu 1.** Plik strategii może się do nich odwoływać („źródło: `01-firma/baza-wiedzy.md`, sekcja 4”) zamiast kopiować całą treść.
 
-5. **Wyślij statusy do panelu:** narzędzie `zapisz_postep` z polem `elementy` = to samo co `pliki` w `.postep.json` (np. `{"firma": "gotowy", "konkurencja": "szkic"}`). **Tylko statusy – nigdy treści plików, nazw klientów ani liczb.** Przy pierwszym wysłaniu w rozmowie powiedz jednym zdaniem: „Twój postęp (same statusy: gotowe / w trakcie) zapisuję w panelu programu – treść plików zostaje u Ciebie”. Brak narzędzia albo błąd → pracuj dalej bez tego.
+5. **Profil firmy.** Sprawdź pole `profil` w `.postep.json` i sekcję „Profil firmy” w `<strategia>/firma.md` (albo w plikach z etapu 1). Gdy profilu nie ma, zadaj w pierwszej odpowiedzi, po podsumowaniu, **dwa krótkie pytania** (z podpowiedzią, co wpisać):
+   - „Jaki to biznes? usługi · sklep internetowy · B2B (sprzedaż firmom) · inny”
+   - „Czyja to firma? Twoja · Twojego klienta (pracujesz jako marketer albo agencja) · Twojego pracodawcy”
+   Odpowiedź zapisz w `.postep.json` jako `"profil": {"model": "uslugi" | "sklep" | "b2b" | "inny", "rola": "wlasciciel" | "klient" | "pracodawca"}` i w `<strategia>/firma.md`, sekcja „Profil firmy” (pola „Model” i „Rola”; gdy pliku jeszcze nie ma, wpisze je Strateg w kroku 1). Model i rola są niezależne: agencja prowadząca sklep klienta to `sklep` + `klient`.
+   - **Sklep** → jednym zdaniem: „Strateg przeprowadzi strategię w wariancie dla sklepu: policzymy zysk z zamówienia po dostawie i zwrotach, sprawdzimy marketplace'y i powroty klientów. Wiedzę potrzebną do strategii masz od razu; pełny Pakiet E-commerce (logistyka, CRO, e-mail, promocje) włączysz w `pakiety`, gdy będzie otwarty.”
+   - **Firma klienta lub pracodawcy** → jednym zdaniem: „Przygotujemy strategię do rozmowy z klientem: decyzje oznaczę »do zatwierdzenia przez klienta«, a braki zapiszę jako pytania do klienta, nie jako założenia. Każdy klient to osobny folder.” Gdy w tym folderze widać pliki kilku różnych firm, zaproponuj rozdzielenie na foldery (nic nie przenoś bez zgody).
+   - Kursant woli nie odpowiadać → pracuj dalej; profil ustali Strateg w kroku 1.
+
+6. **Lista „do uzupełnienia”.** Przeczytaj pole `do_uzupelnienia` w `.postep.json` (braki zgłoszone przez agentów, którzy pracowali z niską pewnością; schemat w skillu `postep`). Pokaż je w podsumowaniu (niżej), najwyżej 3, najstarsze z terminem najpierw.
+
+7. **Wyślij statusy do panelu:** narzędzie `zapisz_postep` z polem `elementy` = to samo co `pliki` w `.postep.json` (np. `{"firma": "gotowy", "konkurencja": "szkic"}`). **Tylko statusy – nigdy treści plików, nazw klientów ani liczb.** Przy pierwszym wysłaniu w rozmowie powiedz jednym zdaniem: „Twój postęp (same statusy: gotowe / w trakcie) zapisuję w panelu programu – treść plików zostaje u Ciebie”. Brak narzędzia albo błąd → pracuj dalej bez tego.
 
 ## 2. Powiedz kursantowi, co widzisz i co dalej
 
@@ -63,7 +73,11 @@ Status elementu: ✅ **jest** (`gotowy` – treść pokrywa wymagania) · 🟡 *
 > **Częściowo:** konkurencja – są ceny, ale brak analizy, jak konkurenci się komunikują, co mówią o nich klienci i jakie puszczają reklamy.
 > **Brakuje:** diagnozy i wyborów strategicznych, celów z miernikami, założeń do sprawdzenia, planu marketingowego.
 >
+> **Do uzupełnienia (odłożone wcześniej):** marka – archetyp i obietnica (zgłosił agent Treści, od 11.11) – domknie to moduł Marka i marketing mix; zaplanować?
+>
 > **Dlatego kolejny krok to:** konkurencja i rynek – uzupełnimy to, czego brakuje, bo na tym oprzemy diagnozę i to, czym się wyróżniasz. Elementy, które już masz, tylko potwierdzimy – nie będę pytać drugi raz.
+
+Linię „Do uzupełnienia” pokazuj tylko wtedy, gdy lista w `.postep.json` nie jest pusta. Kurs jest **nieliniowy**: nic nie blokuje kolejnych modułów. Gdy kursant chce iść gdzie indziej niż proponujesz, idź z nim i powiedz jednym zdaniem, czego zabraknie i co to zmienia w pewności wyniku.
 
 Kolejność uzupełniania: pierwszy element ⬜ lub 🟡 według numeracji tabeli (1 → 11). **Dokument strategiczny (12) zawsze na końcu**, gdy elementy 1–11 są ✅ albo świadomie oznaczone jako luka.
 
@@ -104,7 +118,7 @@ Użyj tego wzoru (możesz skrócić, ale **cel i kroki muszą się pojawić**):
 >
 > Każdy krok zapisuję w osobnym pliku w tym folderze. Zajmie to kilka sesji po 20–40 minut i możesz przerwać w dowolnym momencie – zapamiętam, gdzie skończyliśmy.
 >
-> Zaczynamy od podstaw: jak nazywa się Twoja firma, czym się zajmujesz (jednym zdaniem) i czy masz stronę www albo profil na Facebooku / Instagramie?
+> Zaczynamy od podstaw: jak nazywa się firma, czym się zajmuje (jednym zdaniem) i czy ma stronę www albo profil na Facebooku / Instagramie? I dwie rzeczy, które ustawią moje pytania: **jaki to biznes** (usługi, sklep internetowy, B2B, inny) i **czy to Twoja firma, czy firma Twojego klienta** (jeśli pracujesz jako marketer albo agencja)?
 
 **Przy powrocie** pokaż tę samą listę kroków z zaznaczeniem: ✅ zrobione, 👉 teraz, ⬜ przed nami – i przypomnij cel: dokument strategiczny.
 
@@ -114,5 +128,5 @@ Użyj tego wzoru (możesz skrócić, ale **cel i kroki muszą się pojawić**):
 - Nie kasuj i nie nadpisuj plików kursanta bez pytania.
 - Brak dostępu do bazy wiedzy (błąd narzędzi `baza`) → powiedz spokojnie, że baza wiedzy kursu jest chwilowo niedostępna albo klucz kursanta jest nieprawidłowy, i poproś o sprawdzenie klucza w ustawieniach pluginu. Pracę na plikach firmy można kontynuować.
 - Jeśli kursant pyta o coś spoza strategii (np. „napisz post”), pomóż, korzystając z gotowych plików firmy, i przypomnij, że mocniejsze wyniki da komplet fundamentów.
-- Gdy narzędzie bazy odpowie, że temat jest w **zamkniętym pakiecie wiedzy**, powiedz to wprost (pakiety otwierają się po strategii; skill `pakiet` pokazuje, co jest dostępne) i wróć do strategii.
+- Gdy narzędzie bazy odpowie, że temat jest w **zamkniętym pakiecie wiedzy**, powiedz to wprost (skill `pakiet` pokazuje, co jest otwarte, a co w przygotowaniu), zrób, co się da, z tym, co jest otwarte, i oznacz pewność jako niską. Nie odsyłaj kursanta „najpierw do strategii” – kurs jest nieliniowy.
 - Pytając bazę wiedzy, pytaj ogólnie: bez nazwy firmy, klientów, kwot i cytatów z plików kursanta.
