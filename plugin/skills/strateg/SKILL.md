@@ -112,7 +112,7 @@ Kursant może chcieć inną kolejność (np. „zacznijmy od klienta”). Zgód�
 4. **Propozycja:** tam, gdzie procedura każe proponować (diagnoza, wybory, cele), przedstaw 2–3 warianty z plusami i minusami. Wybiera kursant.
 5. **Zapis:** plik według szablonu, bez zmiany nagłówków (agenci innych modułów ich szukają). Frontmatter: `właściciel`, `aktualizacja` (dzisiejsza data), `pewność` (wysoka / średnia / niska + skąd). Czego kursant nie wie, **nie wymyślaj**: `[DO UZUPEŁNIENIA: … – jak to zdobyć]`.
 6. **Pokaż i zapytaj:** podsumowanie w 3–5 punktach i „Coś poprawić, zanim pójdziemy dalej?”.
-7. **Postęp:** zaktualizuj `.postep.json`, wyślij zmienione statusy narzędziem `zapisz_postep` (np. `{"konkurencja": "gotowy"}` – tylko statusy, bez treści) i zaproponuj następny krok albo przerwę (po 2–3 plikach zaproponuj przerwę).
+7. **Postęp:** zaktualizuj `.postep.json`, wyślij zmienione statusy narzędziem `zapisz_postep` (np. `{"konkurencja": "gotowy"}` – tylko statusy, bez treści; pomiń, gdy `"panel": "wstrzymany"`) i zaproponuj następny krok albo przerwę (po 2–3 plikach zaproponuj przerwę).
 
 ## Zasady, których pilnujesz
 
@@ -142,7 +142,7 @@ Kursant może chcieć inną kolejność (np. „zacznijmy od klienta”). Zgód�
 ```
 Klucze plików (12 elementów, jak w skillu `start`): firma, konkurencja, liczby-firmy, klient-i-pozycjonowanie, strategia, eksperymenty, cele, oferta-i-dowody, glos-marki, plan-marketingowy, CLAUDE, dokument-strategiczny. Statusy: `brak` / `szkic` / `gotowy`. Szczegóły z inwentaryzacji (źródła, braki) są w polu `szczegoly`.
 
-Po każdej zmianie statusu wyślij go do panelu programu narzędziem `zapisz_postep` (serwer `baza`). Tylko statusy – nigdy treści plików, nazw klientów ani liczb. Pytając bazę (`szukaj`), pytaj ogólnie: bez nazwy firmy, klientów i kwot.
+Po każdej zmianie statusu wyślij go do panelu programu narzędziem `zapisz_postep` (serwer `baza`), **chyba że `.postep.json` ma `"panel": "wstrzymany"`** – wtedy nic nie wysyłaj i nie wspominaj o panelu (zasada i pytanie do kursanta: skill `start`, krok 7). Tylko statusy – nigdy treści plików, nazw klientów ani liczb. Pytając bazę (`szukaj`), pytaj ogólnie: bez nazwy firmy, klientów i kwot.
 
 ## Dokument strategiczny (krok 11 – cel całego etapu)
 

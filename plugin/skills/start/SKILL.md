@@ -62,6 +62,9 @@ Status elementu: ✅ **jest** (`gotowy` – treść pokrywa wymagania) · 🟡 *
 6. **Lista „do uzupełnienia”.** Przeczytaj pole `do_uzupelnienia` w `.postep.json` (braki zgłoszone przez agentów, którzy pracowali z niską pewnością; schemat w skillu `postep`). Pokaż je w podsumowaniu (niżej), najwyżej 3, najstarsze z terminem najpierw.
 
 7. **Wyślij statusy do panelu:** narzędzie `zapisz_postep` z polem `elementy` = to samo co `pliki` w `.postep.json` (np. `{"firma": "gotowy", "konkurencja": "szkic"}`). **Tylko statusy – nigdy treści plików, nazw klientów ani liczb.** Przy pierwszym wysłaniu w rozmowie powiedz jednym zdaniem: „Twój postęp (same statusy: gotowe / w trakcie) zapisuję w panelu programu – treść plików zostaje u Ciebie”. Brak narzędzia albo błąd → pracuj dalej bez tego.
+   - **Najpierw porównaj z panelem.** Jeśli `co_dalej` pokazuje w panelu więcej gotowych elementów niż ten folder (np. panel 8 z 12, folder pusty), to kursant prawdopodobnie pracował w innym folderze. **Nie wysyłaj statusów.** Zapisz w `.postep.json` pole `"panel": "wstrzymany"` i zapytaj jednym zdaniem: „W panelu masz już X z 12 elementów, a ten folder jest pusty. Czy to Twój główny folder firmy? Jeśli tak, panel będzie pokazywał postęp stąd.”
+   - Kursant potwierdza, że to główny folder → ustaw `"panel": "wysylaj"` i wyślij statusy. Mówi, że główny jest gdzie indziej albo że to próba → zostaw `"wstrzymany"`; praca w tym folderze idzie dalej normalnie, tylko bez panelu.
+   - Pole `panel` obowiązuje wszystkich agentów: Strateg, Postęp i inne skille wysyłają statusy tylko wtedy, gdy go nie ma albo ma wartość `"wysylaj"`.
 
 ## 2. Powiedz kursantowi, co widzisz i co dalej
 

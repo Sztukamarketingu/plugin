@@ -12,7 +12,7 @@ description: Pokazuje postęp budowy fundamentu firmy – które pliki są gotow
 | # | Plik | Status | Czego brakuje (1 zdanie) |
 |---|---|---|---|
 
-4. **Wyślij statusy do panelu programu:** narzędzie `zapisz_postep` (serwer `baza`) z polem `elementy` = `pliki` z `.postep.json`. Tylko statusy – nigdy treści plików. Brak narzędzia albo błąd → pomiń bez komentarza; odpowiedź o końcu okresu próbnego przekaż kursantowi.
+4. **Wyślij statusy do panelu programu:** narzędzie `zapisz_postep` (serwer `baza`) z polem `elementy` = `pliki` z `.postep.json`. Tylko statusy – nigdy treści plików. Gdy `.postep.json` ma `"panel": "wstrzymany"`, nie wysyłaj; pod tabelą dodaj jedno zdanie, że panel pokazuje postęp z innego folderu, i zapytaj, czy przełączyć go na ten (tak → `"panel": "wysylaj"` i wyślij). Brak narzędzia albo błąd → pomiń bez komentarza; odpowiedź o końcu okresu próbnego przekaż kursantowi.
 5. Pod tabelą: „Gotowe X z 12” (ta sama liczba, którą kursant widzi w panelu), data ostatniej aktualizacji i jeden proponowany następny krok (zwykle pierwszy niegotowy plik → skill `strateg`). Jeśli `co_dalej` zwraca następny krok z planu nauki (lekcja), dodaj go jednym zdaniem.
 6. **Do uzupełnienia:** pod tabelą pokaż listę `do_uzupelnienia` z `.postep.json` (gdy nie jest pusta):
 
