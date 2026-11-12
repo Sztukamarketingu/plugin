@@ -132,6 +132,32 @@ test('tryb danych: cel z tempem, tylko wybrane grupy kafelków, zadania i rytm',
   await ui.unmount()
 })
 
+test('moduł Zadania: kafle tablicy wyników i zespołu idą przed liczbami, zespół tylko jako suma', async ($, on) => {
+  const pulpit = {
+    ...PULPIT,
+    pokazuj: ['tablica', 'zespol', 'liczby'],
+    kafelki: {
+      ...PULPIT.kafelki,
+      tablica: [{ nazwa: 'Telefony po przeprowadzce', wartosc: '🟡 9/12', opis: 'tydz. 47 · seria 3' }],
+      zespol: [{ nazwa: 'Zespół', wartosc: '7/9', opis: 'zobowiązania dotrzymane' }],
+    },
+  }
+  const wpisane = swiat(on, { [`${ROOT}/.postep.json`]: JSON.stringify(POSTEP_12), [`${ROOT}/.pulpit.json`]: JSON.stringify(pulpit) })
+  await start($)
+  const ui = await $.ui.mount({ ...PANEL, surface: 'desktop' })
+  expect(await ui.find({ key: 'k2' })).toBeDefined() // liczby po tablicy i zespole
+  expect(await ui.find({ key: 'k3' })).toBeUndefined() // reklamy nie są w „pokazuj”
+  await ui.press({ key: 'k0' })
+  await ui.press({ key: 'k1' })
+  await ui.press({ key: 'k2' })
+  expect(wpisane.map(w => w.split(':')[0])).toEqual([
+    'Rozłóż mi „Telefony po przeprowadzce” (🟡 9/12)',
+    'Rozłóż mi „Zespół” (7/9)',
+    'Rozłóż mi „Oferty otwarte” (7)',
+  ])
+  await ui.unmount()
+})
+
 test('poza folderem firmy mod nic nie rysuje', async ($, on) => {
   swiat(on, {})
   on('ui.render', ($: any, e: any) => {

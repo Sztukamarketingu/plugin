@@ -42,6 +42,8 @@ Gdy `.postep.json` ma 12 elementów `gotowy` (albo kursant prosi „zmień dane 
    - **marketing** – np. zapytania w tym tygodniu, posty względem planu treści (z `raporty/tydzien-*`, planu treści),
    - **reklamy** – wydatek i koszt zapytania (z kart kampanii w `wiki/kampanie/`; tylko gdy firma prowadzi reklamy),
    - **sprzedaz** – oferty otwarte i ich wartość (z `wiki/klienci/` albo CRM),
+   - **tablica** – tablica wyników modułu Zadania: 1–3 miary ze światłami (np. „🟡 9/12”) albo aktywny kamień, seria tygodni, dzień następnego rozliczenia (z `cele.md` i `.postep.json` → `zadania`; tylko gdy `zadania.tablica` jest ustawione),
+   - **zespol** – jeden kafel „Zespół”: zobowiązania dotrzymane w ostatnim tygodniu jako suma (np. „7/9”) – **bez imion i bez rankingu osób** (tylko gdy `zadania.zespol.ludzie`),
    - **zadania** – lista na dziś z „Zajmij się” (z dzisiejszego briefu albo ClickUp / Bitrix24 przez skill `zadania`),
    - **rytm** – brief rano, sprawozdanie, skrzynka (wymaga drugiego mózgu).
    Proponuj tylko to, do czego są dane. Grupa bez danych = powiedz, czego brakuje, i jej nie zaznaczaj.
@@ -58,7 +60,9 @@ Gdy `.postep.json` ma 12 elementów `gotowy` (albo kursant prosi „zmień dane 
     "liczby": [{ "nazwa": "Oferty otwarte", "wartosc": "7", "opis": "za 48 tys. zł" }],
     "marketing": [],
     "reklamy": [],
-    "sprzedaz": []
+    "sprzedaz": [],
+    "tablica": [{ "nazwa": "Telefony po przeprowadzce", "wartosc": "🟡 9/12", "opis": "tydz. 47 · seria 3" }],
+    "zespol": [{ "nazwa": "Zespół", "wartosc": "7/9", "opis": "zobowiązania dotrzymane, tydz. 47" }]
   },
   "zadania": [{ "tytul": "Oferta dla hotelu Pod Lipami", "kropka": "po_terminie", "termin": "2026-11-02" }],
   "zrodlo_zadan": "ClickUp",
@@ -73,7 +77,7 @@ Gdy `.postep.json` ma 12 elementów `gotowy` (albo kursant prosi „zmień dane 
 
 ## 5. Aktualizacja liczb
 
-Polecenie „odśwież liczby na pulpicie” (przycisk „Zaktualizuj liczby”) albo koniec `/rano`, `/wieczor`, `/tydzien`, gdy `.pulpit.json` istnieje: zaktualizuj `cel.teraz`, kafelki, `zadania` i `aktualizacja` z aktualnych plików. Wybór w `pokazuj` zmieniasz tylko na prośbę kursanta. Powiedz jednym zdaniem, co się zmieniło.
+Polecenie „odśwież liczby na pulpicie” (przycisk „Zaktualizuj liczby”) albo koniec `/rano`, `/wieczor`, `/tydzien`, gdy `.pulpit.json` istnieje: zaktualizuj `cel.teraz`, kafelki (w tym `tablica` i `zespol` z ostatniego rozliczenia), `zadania` i `aktualizacja` z aktualnych plików. Wybór w `pokazuj` zmieniasz tylko na prośbę kursanta. Powiedz jednym zdaniem, co się zmieniło.
 
 ## Granice
 

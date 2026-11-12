@@ -40,4 +40,9 @@ if [[ -f index.md && -d warsztat ]]; then
   wejscie=$(find warsztat/wejscie -type f -not -name '.*' 2>/dev/null | wc -l | tr -d ' ')
   [[ "$wejscie" -gt 0 ]] && echo "  - w skrzynce warsztat/wejscie/: $wejscie plików (/zapisz)"
 fi
+# zarząd: tylko nazwy teczek, bez treści
+if [[ -d zarzad ]]; then
+  teczki=$(find zarzad -maxdepth 1 -name '*.md' -exec basename {} .md \; 2>/dev/null | sort | tr '\n' ' ')
+  [[ -n "$teczki" ]] && echo "- Zarząd: teczki $teczki(/zarzad – narada, /<rola> – rozmowa z dyrektorem)"
+fi
 echo "Na początku rozmowy użyj skilla start (Opiekun): inwentaryzacja, co już jest, czego brakuje do dokumentu strategicznego, następny krok."

@@ -167,6 +167,14 @@ Na końcu pokaż kursantowi streszczenie i zapytaj, czy tak opisałbyś / opisa�
 1. Ćwiczenie „post bez kontekstu vs z plikami”: jeden post na temat od kursanta, najpierw **bez czytania plików firmy**, potem po przeczytaniu `<strategia>/klient-i-pozycjonowanie.md`, `<strategia>/glos-marki.md`, `<strategia>/oferta-i-dowody.md`. Pytanie: „Czy pierwszą wersję mógłby opublikować Twój konkurent?”.
 2. Powiedz, co zostało na przegląd kwartalny (pełne etapy 0, 6, 8, 9 procedury) i zaproponuj termin pierwszego przeglądu (procedura `Cotygodniowe rozliczenie celu strategicznego` dla rytmu tygodniowego).
 3. Zaproponuj kolejny moduł kursu: **drugi mózg firmy** (`/drugi-mozg`) – codzienny rytm, który pilnuje realizacji tej strategii.
+4. **Zarząd firmy.** Gdy `.postep.json` nie ma `zarzad.otwarty`, a `firma`, `liczby-firmy`, `klient-i-pozycjonowanie`, `strategia` i `cele` mają co najmniej szkic – powiedz: „Strategia jest gotowa, więc możesz otworzyć zarząd: dyrektorów, którzy będą pilnować finansów, marketingu, sprzedaży i operacji Twojej firmy. Wpisz `/zarzad`.” Zarząd można otworzyć wcześniej niż dokument strategiczny.
+
+## Prezes zarządu (gdy zarząd jest otwarty)
+
+Gdy `.postep.json` ma `zarzad.otwarty`, jesteś też **prezesem zarządu**. Przy pierwszej takiej rozmowie przeczytaj `karta-prezesa.md` z folderu tego skilla i wspólne zasady `../zarzad/zasady.md`. Wtedy:
+- zaczynasz od meldunku (zasada 1) i czytasz swoją teczkę `zarzad/strateg.md`; na końcu sesji ją uzupełniasz (szablon `../zarzad/teczka.md`),
+- decyzje innych dyrektorów, które zmieniają strategię, cele albo plan marketingowy, trafiają do Ciebie,
+- gdy potrzebujesz zdania innego obszaru („co na to Finansowy?”), wezwij agenta `czlonek-zarzadu` z rolą i ścieżką do jego karty (`../<rola>/karta.md`); przy decyzji dotykającej kilku obszarów zaproponuj naradę (`/zarzad`).
 
 ## Ocena kursu raz w tygodniu (gdy jest drugi mózg)
 

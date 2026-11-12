@@ -55,6 +55,16 @@ Komendy:
 
 Co powstanie: `index.md`, `log.md`, `Pulpit firmy.md`, foldery `warsztat/`, `pomysly/`, `spotkania/`, `dziennik-decyzji/`, `raporty/`, `wiki/`, `prywatne/`, `archiwum/`. Twoje dotychczasowe pliki zostają na swoich miejscach.
 
+## Zarząd firmy (od wersji 0.5.0)
+
+Po strategii (gdy masz kierunek, liczby, klienta, wybory i cele) możesz otworzyć **zarząd**: agentów-dyrektorów, którzy znają Twoją strategię, pilnują swoich liczb, mówią, czego im brakuje, i przygotowują decyzje. Decydujesz Ty.
+
+- `/zarzad` – otwarcie zarządu (skład dopasowany do firmy: usługi, sklep, B2B), narada przy ważnej decyzji (domyślnie metodą kapeluszy: najpierw Twoja intuicja, potem dyrektorzy, którzy jej nie znają), skład i potrzeby zarządu
+- `/strateg` (prezes), `/finansowy`, `/marketing`, `/sprzedaz`, `/operacyjny`, `/produkt-zakupy` (sklep), `/ludzie` (gdy masz zespół) – rozmowa z jednym dyrektorem
+- Treści i Reklamy to **pomocnicy** Dyrektora marketingu, nie członkowie zarządu
+
+Co powstanie: folder `zarzad/` z teczką każdego dyrektora (jego pamięć o Twojej firmie) i pole `zarzad` w `.postep.json`. Braki, które zgłosi dyrektor, trafiają na listę „do uzupełnienia” i – po Twojej zgodzie – do zadań.
+
 ## Narzędzia do researchu (opcjonalnie)
 
 Agent bada konkurencję na prawdziwych przykładach (strony, opinie, reklamy). Działa bez dodatków, ale więcej zobaczy z:

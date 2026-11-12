@@ -33,7 +33,7 @@ const ELEMENTY: [string, string][] = [
   ['CLAUDE', 'Instrukcja dla Claude'],
   ['dokument-strategiczny', 'Dokument strategiczny'],
 ]
-const GRUPY_KAFELKOW = ['liczby', 'marketing', 'reklamy', 'sprzedaz']
+const GRUPY_KAFELKOW = ['tablica', 'zespol', 'liczby', 'marketing', 'reklamy', 'sprzedaz']
 
 const dwa = (n: number) => String(n).padStart(2, '0')
 const iso = (ms: number) => {

@@ -11,14 +11,14 @@
       "displayName": "AI w biznesie i marketingu",
       "source": "./plugin",
       "description": "Zespół agentów AI: fundament firmy, strategia marketingowa i drugi mózg firmy w Obsidianie, na bazie wiedzy kursu.",
-      "version": "0.4.1"
+      "version": "0.6.0"
     },
     {
       "name": "pulpit-firmy",
       "displayName": "Pulpit firmy",
       "source": "./pulpit-firmy",
       "description": "Pasek i panel obok rozmowy w Claude Code: postęp strategii, potem wybrane dane firmy. Dodatek do „AI w biznesie i marketingu”.",
-      "version": "0.1.0"
+      "version": "0.2.0"
     }
   ]
 }
