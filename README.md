@@ -65,6 +65,14 @@ Po strategii (gdy masz kierunek, liczby, klienta, wybory i cele) możesz otworzy
 
 Co powstanie: folder `zarzad/` z teczką każdego dyrektora (jego pamięć o Twojej firmie) i pole `zarzad` w `.postep.json`. Braki, które zgłosi dyrektor, trafiają na listę „do uzupełnienia” i – po Twojej zgodzie – do zadań.
 
+## Moduł Zadania (od wersji 0.6.0, plan ze strategii i priorytety od 0.7.0)
+
+- `/zadania` – podłącza narzędzie do zadań (ClickUp, Bitrix24, Asana… albo wklejona lista), ustala zespół i kto zatwierdza, rozpisuje plan marketingowy na kamienie milowe i zadania na 4 tygodnie, ustala **jeden główny priorytet na osobę** i limit zadań w toku, układa tablicę wyników. Gdy prosisz o nowe zadanie spoza planu, zapyta: „co odkładamy?”.
+- `/tydzien` – rozliczenie tygodnia: zobowiązania, tablica, zadania w toku i ruch w priorytetach, co kwartał przegląd zobowiązań („czy zaczęlibyśmy to dziś?”).
+- Zapytanie od klienta albo propozycja współpracy („czy brać to zlecenie?”) – ocena według Twoich kryteriów „Kogo i co bierzemy” (`/pomysl`). Odpowiedź do klienta dostajesz jako szkic.
+
+Do panelu programu idą tylko statusy i liczby (np. „priorytety ustalone: tak”, „limit: 3”) – nigdy treść priorytetów, zadań ani imiona.
+
 ## Narzędzia do researchu (opcjonalnie)
 
 Agent bada konkurencję na prawdziwych przykładach (strony, opinie, reklamy). Działa bez dodatków, ale więcej zobaczy z:
