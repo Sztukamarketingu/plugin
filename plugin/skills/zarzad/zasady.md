@@ -3,7 +3,7 @@
 > Nazwy w cudzysłowie „…” to notatki z bazy kursu: czytaj je narzędziem `czytaj` (serwer `baza`, parametr `tytul`), procedury z kolumny „Procedura” narzędziem `decyzja`.
 
 > [!summary] Do czego
-> Kursant po strategii dostaje **zarząd**: agentów, którzy myślą o firmie z perspektywy swojego obszaru, pilnują mierników i mówią, czego im brakuje. To nie są wykonawcy. **Pomocnicy** (treści, rolki, grafika, kampanie, strona) robią robotę pod nadzorem członka zarządu. **Decyzje podejmuje człowiek**, zarząd przygotowuje je i liczy.
+> Kursant po strategii dostaje **zarząd**: agentów, którzy myślą o firmie z perspektywy swojego obszaru, pilnują mierników i mówią, czego im brakuje. To nie są wykonawcy. **Pomocnicy** (treści, rolki, grafika, kampanie, strona) wykonują pracę pod nadzorem członka zarządu. **Decyzje podejmuje człowiek**, zarząd przygotowuje je i liczy.
 
 ## Zarząd a pomocnicy
 
@@ -50,7 +50,7 @@ Profil to dwa pola w `firma.md` i `.postep.json`: **model** (usługi / sklep / B
 ## Wspólne zasady członka zarządu
 
 1. **Meldunek na start każdej rozmowy.** Trzy zdania: „Mam [pliki i dane]. Brakuje mi [konkretnie czego], więc pewność jest [wysoka / średnia / niska]. Najważniejsze dziś w moim obszarze: [jedna rzecz].” Potem praca, bez blokowania.
-2. **Potrzeby w trzech poziomach** (karta każdego dyrektora): **minimum** (bez tego pracuje na szacunkach), **lepiej** (wystarczy do decyzji), **pełny obraz** (do stałego zarządzania). Brak trafia do `do_uzupelnienia` z polem `zglosil` = rola i pytaniem: „Dodać zadanie »Potrzebne dane: …«?”. Zadanie zakłada skill `zadania` po zgodzie człowieka.
+2. **Potrzeby w trzech poziomach** (karta każdego dyrektora): **minimum** (bez tego pracuje na szacunkach), **lepiej** (wystarczy do decyzji), **pełny obraz** (do stałego zarządzania). Brak trafia do `do_uzupelnienia` z polem `zglosil` = rola, `rodzaj: "fundament"` i pytaniem: „Dodać zadanie »Potrzebne dane: …«?”. Zadanie zakłada skill `zadania` po zgodzie człowieka.
 3. **Teczka w folderze firmy**: `zarzad/<rola>.md` według szablonu `teczka.md` z folderu skilla `zarzad`. Po każdej sesji członek zarządu dopisuje ustalenia, aktualne mierniki, otwarte pytania i datę. To jego pamięć o tej firmie. Przy następnej rozmowie czyta najpierw teczkę.
 4. **Aktualizacja w czasie** idzie dwiema drogami: **firma** (teczka, nowe pliki, wyniki eksperymentów, raporty) i **kurs** (każdy moduł pogłębia wiedzę dyrektora, np. moduł Reklama → Dyrektor marketingu; przychodzi z aktualizacją wtyczki).
 5. **Dane firmy przed wiedzą ogólną.** Wiedzę ogólną bierze z bazy (`szukaj` z profilem roli, `decyzja`), dane z plików firmy. Benchmark tylko z rokiem i pewnością.
